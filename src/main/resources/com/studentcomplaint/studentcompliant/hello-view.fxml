@@ -1,16 +1,30 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
-<?import javafx.scene.layout.VBox?>
-
 <?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="com.studentcomplaint.studentcompliant.HelloController">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="487.0" prefWidth="732.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane layoutX="337.0" layoutY="133.0" prefHeight="487.0" prefWidth="732.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="58.0" layoutY="37.0" text="Student Name" />
+            <TextField layoutX="161.0" layoutY="33.0" />
+            <Label layoutX="58.0" layoutY="81.0" text="Student Matricule" />
+            <TextField layoutX="161.0" layoutY="77.0" />
+            <Label layoutX="58.0" layoutY="131.0" text="Student level" />
+            <TextField layoutX="161.0" layoutY="127.0" />
+            <Label layoutX="58.0" layoutY="177.0" text="Course Title" />
+            <TextField layoutX="161.0" layoutY="173.0" />
+            <Label layoutX="375.0" layoutY="37.0" text="Course Code" />
+            <TextField layoutX="478.0" layoutY="33.0" />
+            <Label layoutX="375.0" layoutY="90.0" text="Complain details" />
+            <TextArea layoutX="478.0" layoutY="77.0" prefHeight="127.0" prefWidth="200.0" />
+            <Button layoutX="507.0" layoutY="286.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="149.0" text="Submit" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
